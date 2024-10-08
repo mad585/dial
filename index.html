@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecow Skype Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ecow Skype Clone</h1>
+        </header>
+        <div class="sidebar">
+            <ul>
+                <li>Contacts</li>
+                <li>Chats</li>
+                <li>Calls</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <main>
+            <div class="chat-window">
+                <div class="messages"></div>
+                <input type="text" placeholder="Type a message..." />
+            </div>
+            <div class="file-upload">
+                <input type="file" id="csvInput" accept=".csv" />
+                <button id="uploadCsv">Upload CSV</button>
+            </div>
+            <div class="audio-player">
+                <input type="file" id="audioInput" accept="audio/*" />
+                <button id="playAudio">Play Audio</button>
+            </div>
+            <button id="callButton">Call</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
